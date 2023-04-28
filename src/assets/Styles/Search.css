@@ -1,0 +1,13 @@
+.s {
+  display: inline-flex;
+  margin-left: 85.9%;
+  background: rgb(222, 218, 218);
+}
+
+.search {
+  background: rgb(222, 218, 218);
+  border-color: rgb(194, 188, 188);
+  height: 20px;
+  width: 200px;
+  border-radius: 5px;
+}/*# sourceMappingURL=Search.css.map */

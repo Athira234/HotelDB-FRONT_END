@@ -1,0 +1,40 @@
+@import "./Variables.scss";
+@import "./mixins.scss";
+
+.loginform {
+  margin-top: 10px;
+  display: block;
+  max-width: 500px;
+  margin-left: 590px;
+}
+.contain {
+  margin-top: 10%;
+  //justify-content: center;
+}
+.login {
+  margin-left: 30%;
+  font-family: "Gill Sans", sans-serif;
+  font-size: xx-large;
+}
+.myinput[type="text"] {
+  background-color: transparent !important;
+}
+.myinput {
+  width: 350px;
+  margin: 0 0 15px;
+  border-width: 1.5px;
+  padding: 12px;
+  margin-top: 0px;
+  height: 10px;
+}
+.name {
+  font-family: "Gill Sans", sans-serif;
+}
+input:-internal-autofill-selected {
+  appearance: none;
+  background-image: none !important;
+  background-color: white !important;
+}
+.message {
+  margin-left: 15%;
+}

@@ -1,0 +1,15 @@
+.screen {
+  margin-left: 25px;
+  margin-right: 40px;
+  background-color: white;
+}
+.react-grid-Row--even {
+  border-top: 1px ridge;
+  border-bottom: 1px ridge;
+  border-color: black;
+}
+.react-grid-Row,
+.react-grid-HeaderRow {
+  margin-right: 10px;
+  margin-left: 10px;
+}

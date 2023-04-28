@@ -1,0 +1,32 @@
+.hotelinfo {
+  display: block;
+  text-align: left;
+  margin-left: 30%;
+  margin-top: 40px;
+  font-family: sans-serif;
+}
+.hotelinfo .Heading::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 1.5px;
+  background-color: #000;
+  margin-top: 10px;
+}
+
+.hotelinfo td {
+  padding: 6px 0px;
+}
+
+table {
+  width: 200px;
+}
+
+tr td:nth-child(2)::before {
+  content: ":";
+  padding-right: 10px;
+}
+
+a {
+  color: blue;
+}/*# sourceMappingURL=HotelInfo.css.map */

@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
+import HotelAddorEditForm from "./layout/HotelAddorEditForm";
+import React from "react";
+import { Provider } from "react-redux";
+import store from "./store/store";
+import { HashRouter, Route } from "react-router-dom";
+import Login from "../src/layout/Login";
+import HotelList from "./layout/HotelList";
+import HotelInfo from "./layout/HotelInfo";
+import  HotelCustomers  from "./layout/HotelCustomers";
 function App() {
+  console.log("inside app component");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Provider store={store}>
+        <div>
+          {/* <Login /> */} <Route exact path="/" component={Login} />
+          <Route exact path="/hotels" component={HotelList} />
+          <Route path="/hoteladdoredit" component={HotelAddorEditForm} />
+          <Route path="/hotelinfo/:id" component={HotelInfo} />
+          <Route path="/hotels/:id/customers" component={HotelCustomers} />
+        </div>
+      </Provider>
+    </HashRouter>
   );
 }
 

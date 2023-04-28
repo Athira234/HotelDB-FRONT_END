@@ -1,0 +1,40 @@
+.screen {
+  margin-left: 25px;
+  margin-right: 40px;
+  background-color: white;
+  position: relative;
+  // width: 200%;
+}
+.react-grid-Row--even {
+  border-top: 1px ridge;
+  border-bottom: 1px ridge;
+  border-color: black;
+}
+.react-grid-Row,
+.react-grid-HeaderRow {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.react-grid-Grid {
+  height: 900px;
+  // width: 100%;
+  //  margin-left: none;
+}
+.overlay {
+  position: fixed;
+  z-index: 1;
+  top: 650px;
+}
+.listempty {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 300px;
+  font-family: "Gill Sans", sans-serif;
+  //font-weight: 600;
+}
+.icons {
+  margin-left: -11px;
+}
+.icons button {
+  margin: 0 5px;
+}
